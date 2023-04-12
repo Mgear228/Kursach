@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+}
+
+body header {
+  width: 100%;
+  height: 900px;
+  background: url("header-back.b91279a3.png") center / 100% 100%;
+}
+
+body header .head {
+  width: 70%;
+  height: 70px;
+  border-bottom: 1px solid #fff;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+}
+
+body header .head .head-contact {
+  width: 300px;
+  justify-content: space-between;
+  display: flex;
+}
+
+body header .head .head-contact h3 {
+  color: #fff;
+  font-family: HelveticaNeueCyr, sans-serif;
+  font-size: 14px;
+  font-weight: 550;
+  line-height: 140%;
+}
+
+body header ul {
+  width: 70%;
+  justify-content: space-between;
+  margin: 30px auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+body header ul li {
+  letter-spacing: .05em;
+  color: #fff;
+  font-family: HelveticaNeueCyr, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+body header .middle {
+  width: 636px;
+  margin-top: 120px;
+  margin-left: 15%;
+}
+
+body header .middle h1 {
+  color: #fff;
+  font-family: HelveticaNeueCyr, sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+body header .middle .middle-desc {
+  width: 400px;
+  color: #fff;
+  border-left: 3px solid #fff;
+  padding-left: 25px;
+  font-family: HelveticaNeueCyr, sans-serif;
+  font-size: 14px;
+  font-weight: 550;
+  line-height: 140%;
+}
+
+body header .middle button {
+  letter-spacing: .05em;
+  width: 175px;
+  height: 50px;
+  color: #fff;
+  background: #bd0007;
+  border: none;
+  margin-top: 50px;
+  font-family: HelveticaNeueCyr, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+body header .buttons {
+  width: 110px;
+  justify-content: space-between;
+  margin-top: 145px;
+  margin-left: 15%;
+  display: flex;
+}
+
+body header .buttons div {
+  width: 45px;
+  height: 45px;
+  background-color: #133d8d;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+body header .buttons div .mirror {
+  transform: scaleX(-1);
+}
+
+body header aside {
+  width: 526px;
+  height: 235px;
+  background-color: #3333334d;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+}
+
+body header aside .ship-desc h2 {
+  letter-spacing: .05em;
+  color: #fff;
+  margin: 30px 0 0 37px;
+  font-family: HelveticaNeueCyr, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+body header aside .ship-desc table {
+  width: 270px;
+  border-spacing: 10px;
+  margin: 20px 0 0 30px;
+}
+
+body header aside .ship-desc table tr {
+  color: #fff;
+  opacity: .6;
+  font-family: HelveticaNeueCyr, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+body header aside img {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+}
+
+/*# sourceMappingURL=index.72acbbbd.css.map */
