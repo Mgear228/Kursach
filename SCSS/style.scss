@@ -1,3 +1,4 @@
+@import 'mixin';
 $font: 'HelveticaNeueCyr', sans-serif;
 $lnh: 140%;
 body {
@@ -6,7 +7,7 @@ body {
         background: url("./header-back.png");
         width: 100%;
         height: 900px;
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: center center;
         .head {
             margin: 0 auto;
@@ -21,10 +22,9 @@ body {
                 display: flex;
                 justify-content: space-between;
                 h3 {
-                    font-family: $font;
+                    @include text($font, $lnh);
                     font-weight: 550;
                     font-size: 14px;
-                    line-height: $lnh;
                     color: white;
                 }
             }
@@ -37,10 +37,9 @@ body {
             padding: 0;
             width: 70%;
             li {
-                font-family: $font;
+                @include text($font, $lnh);
                 font-weight: 700;
                 font-size: 14px;
-                line-height: $lnh;
                 letter-spacing: 0.05em;
                 color: white;
             }
@@ -50,27 +49,24 @@ body {
             margin-top: 120px;
             margin-left: 15%;
             h1 {
-                font-family: $font;
+                @include text($font, $lnh);
                 font-weight: 300;
                 font-size: 60px;
-                line-height: $lnh;
                 color: white;
             }
             .middle-desc {
                 width: 400px;
-                font-family: $font;
+                @include text($font, $lnh);
                 font-weight: 550;
                 font-size: 14px;
-                line-height: $lnh;
                 color: white;
                 border-left: 3px solid white;
                 padding-left: 25px;
             }
             button {
-                font-family: $font;
+                @include text($font, $lnh);
                 font-weight: 700;
                 font-size: 16px;
-                line-height: $lnh;
                 letter-spacing: 0.05em;
                 margin-top: 50px;
                 width: 175px;
@@ -108,10 +104,9 @@ body {
             .ship-desc {
                 h2 {
                     margin: 30px 0 0 37px;
-                    font-family: $font;
+                    @include text($font, $lnh);
                     font-weight: 700;
                     font-size: 14px;
-                    line-height: $lnh;
                     letter-spacing: 0.05em;
                     color: white;
                 }
@@ -120,10 +115,9 @@ body {
                     border-spacing: 10px;
                     margin: 20px 0 0 30px;
                     tr {
-                        font-family: $font;
+                        @include text($font, $lnh);
                         font-weight: 300;
                         font-size: 14px;
-                        line-height: $lnh;
                         color: white;
                         opacity: 0.6;
                     }
@@ -133,6 +127,348 @@ body {
                 position: absolute;
                 left: 60%;
                 top: 50%;
+            }
+        }
+    }
+    .section1 {
+        background-color: white;
+        width: 100%;
+        height: 750px;
+        .section1-news {
+            @include text-news-publication($font, $lnh);
+        }
+        .owl-carousel {
+            margin: auto;
+            width: 90%;
+            .section1-news-frame {
+                background: url(./backnews1.png);
+                @include scale(306px, 330px);
+                .section1-news-date {
+                    background-color: rgba(189, 0, 7, 1);
+                    color: white;
+                    padding: 8px 12px 5px;
+                    width: 140px;
+                    position: relative;
+                    left: 25px;
+                    top: 25px;
+                    text-align: center;
+                    font-weight: 550;
+                    font-size: 13px;
+                    opacity: 0.75;
+                }
+                .section1-news-desc1 {
+                    margin-top: 128px;
+                    margin-left: 25px;
+                    margin-bottom: 15px;
+                    width: 272px;
+                    @include text($font, $lnh);
+                    font-weight: 550;
+                    font-size: 16px;
+                    color: white;
+                }
+                .section1-news-desc1-2 {
+                    margin-top: 152px;
+                    margin-left: 25px;
+                    margin-bottom: 15px;
+                    width: 272px;
+                    @include text($font, $lnh);
+                    font-weight: 550;
+                    font-size: 16px;
+                    color: white;
+                }
+                .section1-news-desc2 {
+                    margin-left: 25px;
+                    width: 272px;
+                    @include text($font, $lnh);
+                    font-weight: 550;
+                    font-size: 14px;
+                    color: white;
+                    opacity: 0.75;
+                }
+                &:nth-child(2) {
+                    background: url(./backnews2.png);
+                }
+                &:nth-child(3) {
+                    background: url(./backnews3.png);
+                }
+                &:nth-child(4) {
+                    background: url(./backnews4.png);
+                }
+            }
+        }
+    }
+    .section2 {
+        width: 100%;
+        height: 798px;
+        background-color: rgba(19, 61, 141, 1);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        .section2-history {
+            h1 {
+                color: white;
+                @include text($font, $lnh);
+                font-weight: 400;
+                font-size: 36px;
+                letter-spacing: 0.05em;
+            }
+            .section2-history-desc {
+                width: 526px;
+                color: white;
+                @include text($font, $lnh);
+                font-weight: 400;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+        }
+        .section2-statistic {
+            img {
+                margin-top: 200px;
+                width: 606px;
+            }
+            ul {
+                list-style-type: square;
+                color: white;
+                li {
+                    color: white;
+                    @include text($font, $lnh);
+                    font-weight: 550;
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    &:first-child {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .section3 {
+        width: 100%;
+        height: 1000px;
+        background-color: white;
+        .section3-publication {
+            @include text-news-publication($font, $lnh);
+        }
+        .owl-carousel {
+            margin: auto;
+            width: 90%;
+            .section3-publication-frame {
+                img {
+                    @include scale(306px, 260px);
+                }
+                h4 {
+                    font-weight: 400;
+                    font-size: 14px;
+                    opacity: 0.75;
+                    @include text($font, $lnh);
+                }
+                .section3-publication-frame-desc {
+                    width: 305px;
+                    @include text($font, $lnh);
+                    font-weight: 700;
+                    font-size: 16px;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                }
+                h5 {
+                    color: #133D8D;
+                    @include text($font, $lnh);
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .section4 {
+        width: 100%;
+        height: 1010px;
+        background: rgba(19, 61, 141, 0.5);
+        .section4-projects {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 95%;
+            position: relative;
+            top: 125px;
+            h3 {
+                font-weight: 400;
+                font-size: 36px;
+                letter-spacing: 0.05em;
+                color: white;
+                @include text($font, $lnh);
+                margin-right: 60.5%;
+            }
+            h5 {
+                font-weight: 700;
+                font-size: 18px;
+                letter-spacing: 0.05em;
+                color: white;
+                @include text($font, $lnh);
+                margin-right: 2.5%;
+            }
+            .buttons {
+                width: 110px;
+                display: flex;
+                justify-content: space-between;
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 45px;
+                    height: 45px;
+                    background-color: rgba(19, 61, 141, 1);
+                    .mirror {
+                        transform: scaleX(-1);
+                    }
+                }
+            }
+        }
+        .section4-block {
+            display: flex;
+            width: 85%;
+            height: 600px;
+            background-color: rgba(19, 61, 141, 1);
+            position: relative;
+            top: 160px;
+            margin: auto;
+            .section4-block-left {
+                width: 60%;
+                img {
+                    width: 60%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    z-index: 0;
+                }
+                h1 {
+                    @include text($font, $lnh);
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: white;
+                    position: relative;
+                    top: 431px;
+                    left: 45px;
+                    z-index: 1;
+                }
+                .section4-block-left-desc {
+                    width: 85%;
+                    color: white;
+                    position: relative;
+                    top: 445px;
+                    left: 45px;
+                    @include text($font, $lnh);
+                    font-weight: 400;
+                    font-size: 14px;
+                    z-index: 1;
+                }
+            }
+            .section4-block-right {
+                position: absolute;
+                left: 60%;
+                width: 40%;
+                height: 100%;
+                .section4-block-right-ship-desc {
+                    margin-left: 60px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    width: 470px;
+                    div {
+                        width: 100%;
+                        h1 {
+                            @include text($font, $lnh);
+                            letter-spacing: 0.05em;
+                            color: white;
+                            font-weight: 700;
+                            font-size: 40px;
+                            margin-bottom: 10px;
+                            span {
+                                margin-left: 10px;
+                                font-size: 14px;
+                            }
+                        }
+                        .ship-desc-text {
+                            width: 210px;
+                            font-weight: 550;
+                            font-size: 14px;
+                            color: white;
+                            @include text($font, $lnh);
+                        }
+                    }
+                }
+                button {
+                    color: white;
+                    @include text($font, $lnh);
+                    font-weight: 700;
+                    font-size: 16px;
+                    letter-spacing: 0.05em;
+                    background: none;
+                    border: 2px solid white;
+                    width: 170px;
+                    height: 51px;
+                    top: 35%;
+                    left: 10%;
+                    position: relative;
+                }
+            }
+        }
+    }
+    footer {
+        width: 100%;
+        height: 442px;
+        background-color: rgba(19, 61, 141, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img {
+            margin-bottom: 40px;
+        }
+        .footer-info {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            ul {
+                list-style: none;
+                padding: 0;
+                li {
+                    @include text($font, $lnh);
+                    font-weight: 550;
+                    font-size: 14px;
+                    color: white;
+                    margin-bottom: 15px;
+                    &:first-child {
+                        font-weight: 700;
+                        font-size: 16px;
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+            .contacts {
+                div {
+                    @include text($font, $lnh);
+                    font-weight: 550;
+                    font-size: 14px;
+                    color: white;
+                    width: 266px;
+                    text-align: end;
+                    &:nth-child(1) {
+                        margin-bottom: 15px;
+                    }
+                    &:nth-child(2) {
+                        margin-bottom: 30px;
+                    }
+                    &:nth-child(3) {
+                        font-weight: 700;
+                        margin-bottom: 11px;
+                    }
+                    &:nth-child(4) {
+                        font-weight: 700;
+                    }
+                }
             }
         }
     }

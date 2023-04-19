@@ -1,0 +1,339 @@
+@media screen and (max-width: 1350px) {
+    body {
+        .section4 {
+            .section4-projects {
+                h3 {
+                    margin-right: 50.5%;
+                }
+            }
+            .section4-block {
+                .section4-block-right {
+                    .section4-block-right-ship-desc {
+                        width: 200px;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 1fr 1fr 1fr 1fr;
+                        div {
+                            h1 {
+                                font-size: 20px;
+                                span {
+                                    font-size: 9px;
+                                }
+                            }
+                        }
+                        .ship-desc-text {
+                            font-size: 9px;
+                        }
+                    }
+                    button {
+                        top: 20%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1150px) {
+    body {
+        .section2 {
+            .section2-statistic {
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1070px) {
+    body {
+        header {
+            nav {
+                ul {
+                    li {
+                        font-size: 9px;
+                    }
+                }
+            }
+            aside {
+                left: 40%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 950px) {
+    body {
+        .section4 {
+            .section4-projects {
+                h3 {
+                    margin-right: 40.5%;
+                }
+            }
+            .section4-block {
+                .section4-block-left {
+                    h1 {
+                        font-size: 14px;
+                    }
+                    .section4-block-left-desc {
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    body {
+        header {
+            aside {
+                width: 396px;
+                height: 305;
+                .ship-desc {
+                    h2 {
+                        font-size: 12px;
+                    }
+                }
+                img {
+                    top: 65%;
+                    left: 30%;
+                }
+            }
+        }
+        footer {
+            .footer-info {
+                ul:first-child {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 750px) {
+    body {
+        header {
+            .middle {
+                margin-top: 60px;
+                h1 {
+                    font-size: 50px;
+                }
+            }
+            .buttons {
+                margin-top: 335px;
+            }
+            aside {
+                top: 70%;
+                left: 15%;
+            }
+        }
+        .section4 {
+            .section4-projects {
+                h3 {
+                    margin-right: 20.5%;
+                }
+            }
+            .section4-block {
+                .section4-block-right {
+                    .section4-block-right-ship-desc {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+        footer {
+            .footer-info {
+                ul:nth-child(2){
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    body {
+        header {
+            .head {
+                width: 95%;
+            }
+            nav {
+                ul {
+                    width: 95%;
+                }
+            }
+            .middle {
+                width: 506px;
+                margin-left: 5%;
+            }
+            .buttons {
+                margin-left: 5%;
+            }
+            aside {
+                left: 5%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    body {
+        .section4 {
+            height: 800px;
+            .section4-projects {
+                h3 {
+                    display: none;
+                }
+            }
+            .section4-block {
+                height: 400px;
+                .section4-block-left {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    h1 {
+                        top: 51px;
+                        left: 40%;
+                    }
+                    .section4-block-left-desc {
+                        top: 205px;
+                        left: 40%;
+                    }
+                }
+                .section4-block-right {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    body {
+        header {
+            .middle {
+                width: 450px;
+                h1 {
+                    font-size: 40px;
+                }
+            }
+            aside {
+                top: 65%;
+            }
+        }
+        .section2 {
+            .section2-history {
+                .section2-history-desc {
+                    width: 426px;
+                }
+            }
+        }
+        footer {
+            .footer-info {
+                ul:nth-child(3) {
+                    display: none;
+                }
+                .contacts {
+                    div {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 490px) {
+    body {
+        header {
+            .head {
+                .head-contact {
+                    display: none;
+                }
+            }
+            nav {
+                ul {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    li {
+                        margin: 0 10px;
+                    }
+                }
+            }
+            .middle {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                h1 {
+                    font-size: 200%;
+                }
+                .middle-desc {
+                    width: 300px;
+                    font-size: 80%;
+                }
+            }
+            .buttons {
+                margin-top: 365px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            aside {
+                left: auto;
+            }
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    body {
+        .section2 {
+            height: 950px;
+            .section2-history {
+                h1 {
+                    font-size: 26px;
+                }
+                .section2-history-desc {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 415px) {
+    body {
+        header {
+            aside {
+                width: 100%;
+            }
+        }
+        .section1 {
+            .owl-carousel {
+                width: 100%;
+            }
+        }
+        .section3 {
+            .owl-carousel {
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 340px) {
+    body {
+        header {
+            .middle {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h1 {
+                    text-align: center;
+                }
+                .middle-desc {
+                    display: none;
+                }
+            }
+            aside {
+                top: 60%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 330px) {
+    body {
+        header {
+            aside {
+                top: 65%;
+            }
+        }
+    }
+}

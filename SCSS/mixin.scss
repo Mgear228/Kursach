@@ -1,0 +1,29 @@
+@mixin text($font, $lnh) {
+    font-family: $font;
+    line-height: $lnh;
+}
+@mixin scale($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin text-news-publication($font, $lnh) {
+    margin: 137px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    h3 {
+        @include text($font, $lnh);
+        font-weight: 400;
+        font-size: 36px;
+        letter-spacing: 0.05em;
+        }
+        h5 {
+            font-weight: 700;
+            font-size: 18px;
+            @include text($font, $lnh);
+            letter-spacing: 0.05em;
+            color: #133D8D;
+        }
+}
