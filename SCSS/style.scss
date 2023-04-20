@@ -17,6 +17,12 @@ body {
             width: 70%;
             height: 70px;
             border-bottom: 1px solid white;
+            img:hover {
+                cursor: pointer;
+            }
+            img:active {
+                filter: invert(0.5);
+            }
             .head-contact {
                 width: 300px;
                 display: flex;
@@ -26,6 +32,12 @@ body {
                     font-weight: 550;
                     font-size: 14px;
                     color: white;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    &:active {
+                        color: gray;
+                    }
                 }
             }
         }
@@ -42,6 +54,12 @@ body {
                 font-size: 14px;
                 letter-spacing: 0.05em;
                 color: white;
+                &:hover {
+                    cursor: pointer;
+                }
+                &:active {
+                    color: gray;
+                }
             }
         }
         .middle {
@@ -74,6 +92,12 @@ body {
                 background: #BD0007;
                 color: white;
                 border: none;
+                &:hover {
+                    background: #ec282f;
+                }
+                &:active {
+                    background: #630104;
+                }
             }
         }
         .buttons {
@@ -89,6 +113,12 @@ body {
                 width: 45px;
                 height: 45px;
                 background-color: rgba(19, 61, 141, 1);
+                &:hover {
+                    background: rgb(30, 96, 220);
+                }
+                &:active {
+                    background: rgb(11, 35, 80);
+                }
                 .mirror {
                     transform: scaleX(-1);
                 }
@@ -318,6 +348,12 @@ body {
                     width: 45px;
                     height: 45px;
                     background-color: rgba(19, 61, 141, 1);
+                    &:hover {
+                        background: rgb(30, 96, 220);
+                    }
+                    &:active {
+                        background: rgb(11, 35, 80);
+                    }
                     .mirror {
                         transform: scaleX(-1);
                     }
@@ -412,6 +448,12 @@ body {
                     top: 35%;
                     left: 10%;
                     position: relative;
+                    &:hover {
+                        background: rgba(0, 0, 0, 0.123);
+                    }
+                    &:active {
+                        background: rgba(0, 0, 0, 0.459);
+                    }
                 }
             }
         }
@@ -426,6 +468,12 @@ body {
         align-items: center;
         img {
             margin-bottom: 40px;
+            &:hover {
+                cursor: pointer;
+            }
+            &:active {
+                filter: invert(0.5);
+            }
         }
         .footer-info {
             width: 100%;
@@ -444,6 +492,12 @@ body {
                         font-weight: 700;
                         font-size: 16px;
                         margin-bottom: 25px;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    &:active {
+                        color: gray;
                     }
                 }
             }
@@ -467,6 +521,12 @@ body {
                     }
                     &:nth-child(4) {
                         font-weight: 700;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    &:active {
+                        color: gray;
                     }
                 }
             }
